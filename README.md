@@ -1,2 +1,1 @@
-# DISpy-turorial
-DISpy-turorial
+# DASPy-tutorial
