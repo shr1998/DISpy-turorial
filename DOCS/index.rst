@@ -20,13 +20,7 @@ Contents
    
    Installation
    Reading DAS Data
-   Handling Continuous Data
-   Basic Processing
-   Visualization
-   Channel Analysis
-   Denoising
-   Wavefield Decomposition
-   Strain-velocity Conversion
+
 
 .. 索引和表格
 .. ==================
@@ -35,4 +29,4 @@ Contents
 .. * :ref:`modindex`
 .. * :ref:`search`
 
-If you have any questions, please contact `<hmz2018@mail.ustc.edu.cn>`_.
+If you have any questions, please contact `<shr0928@mail.ustc.edu.cn>`_.
