@@ -15,7 +15,6 @@ Contents
    :maxdepth: 3
    
    Installation
-   Reading DAS Data
    UI_intro
    CrossCorrelation
 
