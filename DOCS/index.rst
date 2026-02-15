@@ -1,5 +1,5 @@
 
-.. |logo| image:: ../media/logo.png
+.. |logo| image:: ../FIGS/logo.png
     :height: 200
 
 DISpy
