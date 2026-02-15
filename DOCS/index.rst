@@ -6,13 +6,11 @@
 .. |logo| image:: ../media/logo.png
     :height: 200
 
-DASPy
+DISpy
 =============================================
 |logo|
 
-DASPy is an open-source project that provides a python package for DAS (Distributed Acoustic Sensing) data processing.
-
-The goal of the DASPy project is to lower the bar for DAS data processing and promote the development of DAS seismology.
+DISpy provides an efficient framework for surface-wave dispersion inversion based on distributed acoustic sensing (DAS) data. Through an intuitive graphical user interface, users can perform DAS-based ambient noise imaging within a unified workflow, including data reading, preprocessing, cross-correlation computation, dispersion calculation and extraction, and inversion, together with auxiliary functions such as F–K analysis and sensitivity kernel computation.
 
 Contents
 =============================================
