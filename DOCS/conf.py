@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'DASPy-tutorial'
-copyright = '2024, Minzhe Hu'
-author = 'Minzhe Hu'
+project = 'DISpy-tutorial'
+copyright = '2026, Haoran Song'
+author = 'Hapran Song'
 
 # The full version, including alpha/beta/rc tags
 release = '1.0.0'
