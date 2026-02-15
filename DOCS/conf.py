@@ -19,7 +19,7 @@
 
 project = 'DISpy-tutorial'
 copyright = '2026, Haoran Song'
-author = 'Hapran Song'
+author = 'Haoran Song'
 
 # The full version, including alpha/beta/rc tags
 release = '1.0.0'
