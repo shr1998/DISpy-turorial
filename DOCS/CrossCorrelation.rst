@@ -1,3 +1,5 @@
+
+
 CrossCorrelation
 ==================================================
 
@@ -86,3 +88,125 @@ When using the cross-correlation module in practice, users must first configure 
 3. Workflow
 -----------------
 
+|cc|
+
+This section describes the operational workflow of DISpy from program launch 
+to cross-correlation result export. The workflow integrates parameter loading, 
+data processing, runtime monitoring, visualization, and result storage into 
+a unified and structured procedure.
+
+3.1 Workflow Overview
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The overall processing sequence is summarized as follows:
+
++----------------------------+----------------------------------------------+
+| Stage                      | Core Function                                |
++============================+==============================================+
+| Program Initialization     | Enter main interface                         |
++----------------------------+----------------------------------------------+
+| Parameter Loading          | Import and verify configuration file         |
++----------------------------+----------------------------------------------+
+| Cross-Correlation Start    | Launch computation workflow                  |
++----------------------------+----------------------------------------------+
+| Runtime Monitoring         | Track execution status and logs              |
++----------------------------+----------------------------------------------+
+| Real-Time Visualization    | Inspect cross-correlation results            |
++----------------------------+----------------------------------------------+
+| Noise Suppression          | Apply time-domain cut for common-mode noise  |
++----------------------------+----------------------------------------------+
+| Safe Termination           | Gracefully stop computation if necessary     |
++----------------------------+----------------------------------------------+
+| Result Export              | Save cross-correlation outputs               |
++----------------------------+----------------------------------------------+
+
+
+3.2 Detailed Operational Procedure
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Program Initialization
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+After launching DISpy, the user enters the main interface, 
+which serves as the unified control center for parameter configuration, 
+computation management, and execution monitoring.
+
+Parameter Loading
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+Click the ``paraload`` button (Fig. (a)) to load the predefined parameter file.  
+The imported parameters are displayed in the parameter panel.  
+Users may review and adjust the configuration according to specific experimental 
+requirements before starting computation.
+
+Cross-Correlation Computation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+After verifying parameter settings, click ``RunCC`` (Fig. (b)) to initiate 
+the cross-correlation workflow.
+
+During execution, the status bar sequentially reports the current processing stage:
+
+- HDF5 (h5) data loading  
+- Data preprocessing  
+- Cross-correlation calculation  
+
+Meanwhile, the report window (lower-right panel) provides real-time log output 
+and progress information.
+
+Data Attribute Verification
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Once data loading is completed, the data property panel  displays 
+key attributes, including:
+
+- Start and end time  
+- Actual sampling rate  
+- Number of channels  
+
+This panel allows users to verify consistency between data and parameter 
+settings before full-scale computation proceeds.
+
+Real-Time Visualization
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+DISpy supports multi-threaded computation. After each time-window segment 
+is processed, users can visualize the subarray noise cross-correlation 
+function corresponding to a selected virtual source.
+
+Two display modes are provided:
+
+- ``line`` mode  
+- ``imshow`` mode  
+
+Users may switch between modes via the upper-right control buttons.  
+Subarray indices can be browsed using the ``last`` and ``next`` controls.
+
+Common-Mode Noise Suppression
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In practical DAS processing, cross-correlation results may contain 
+common-mode noise caused by instrumental self-noise or system characteristics.
+
+DISpy provides a basic time-domain removal function:
+
+- When the ``cut`` button is green, the function is enabled.
+- Users may interactively select the time range to be removed.
+- Click ``CUT`` to confirm and apply the removal operation.
+
+This process helps suppress common-mode artifacts in visualization results.
+
+Computation Termination
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If computation needs to be stopped, click ``StopCC``.  
+The program terminates safely after finishing the current time window, 
+preventing unexpected interruption or data corruption.
+
+Result Export
+^^^^^^^^^^^^^^^^
+
+After obtaining satisfactory cross-correlation results, click 
+``Save cc files`` to export outputs in the standardized DISpy format.  
+The saved results can be directly used for subsequent dispersion 
+analysis, inversion computation, or external program integration.
