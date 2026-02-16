@@ -107,6 +107,8 @@ Automatic Picking Parameters
 3. Workflow
 -----------------
 
+|disp|
+
 This section describes the operational procedure of the dispersion module, 
 from cross-correlation data loading to manual or automatic picking.
 
