@@ -82,3 +82,7 @@ When using the cross-correlation module in practice, users must first configure 
 
 **STA** (Boolean)
   This parameter sets whether to incorporate seismic station data in the cross-correlation calculation. When set to ``True``, the software will simultaneously use DAS data and seismic station data for cross-correlation calculation; when set to ``False``, only DAS data is used to complete the cross-correlation calculation.
+
+3. Workflow
+-----------------
+
