@@ -1,4 +1,5 @@
-
+.. |cc| image:: ../FIGS/cc.png
+    :height: 400
 
 CrossCorrelation
 ==================================================
