@@ -9,7 +9,7 @@ Inversion
 
 The inversion module in DISpy is implemented as an independent 
 and fully integrated functional unit for surface-wave dispersion 
-inversion (see Fig. 2). It provides a unified graphical interface 
+inversion . It provides a unified graphical interface 
 for hyperparameter configuration, model initialization, real-time 
 monitoring, and result visualization.
 
