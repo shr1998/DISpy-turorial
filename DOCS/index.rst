@@ -17,7 +17,9 @@ Contents
    Installation
    UI_intro
    CrossCorrelation
-
+   disp_cal
+   inv
+   Data Format Specification
 
 .. 索引和表格
 .. ==================
